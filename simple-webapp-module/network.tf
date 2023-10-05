@@ -14,7 +14,7 @@ resource "aws_subnet" "public-subnet" {
   cidr_block        = var.public_subnet_cidr_blocks[count.index]
   availability_zone = var.availability_zone
 
-  map_public_ip_on_launch = true # This enables auto-assign public IPs to instances in this subnet
+  map_public_ip_on_launch = true
 
   tags = {
     Name = "terraform-public-subnet-${count.index + 1}"
