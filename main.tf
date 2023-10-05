@@ -8,8 +8,8 @@ terraform {
 
 locals {
   region = "us-east-1"
-  access_key = "AKIAQHPX54HHLXGG27NZ"
-  secret_key = "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"
+  access_key = "access_key"
+  secret_key = "saccess_key"
   availability_zone = "us-east-1a"
 }
 
